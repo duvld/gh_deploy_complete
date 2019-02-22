@@ -30,16 +30,24 @@ export default class VideoComponent extends Component {
  }
 
  componentDidMount() {
-	//   axios.get('/token').then(results => {
-	//     /*
-	// Make an API call to get the token and identity(fake name) and  update the corresponding state variables.
-	//     */
-	//     const { identity, token } = {"identity":"Ms. Ramon Lakin","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzg0OGNkZTAzNDlmYTRlZTc1ZmE0Njk4ZTE4NTUxYTQyLTE1NTA4MDUxMTAiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJNcy4gUmFtb24gTGFraW4iLCJ2aWRlbyI6e319LCJpYXQiOjE1NTA4MDUxMTAsImV4cCI6MTU1MDgwODcxMCwiaXNzIjoiU0s4NDhjZGUwMzQ5ZmE0ZWU3NWZhNDY5OGUxODU1MWE0MiIsInN1YiI6IkFDYWE3ZTNjZmNjNDAzMjdlZGJkM2Q3OWEwY2VkOGJjNzEifQ.SJwQAgUlOjaLrQaqMUsvROpeIdg1bnhEwFN6FjDCzxk"}
-	//     this.setState({ identity, token });
-	//   });
+	// //   axios.get('/token').then(results => {
+	// //     /*
+	// // Make an API call to get the token and identity(fake name) and  update the corresponding state variables.
+	// //     */
+	// //     const { identity, token } = {"identity":"Ms. Ramon Lakin","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzg0OGNkZTAzNDlmYTRlZTc1ZmE0Njk4ZTE4NTUxYTQyLTE1NTA4MDUxMTAiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJNcy4gUmFtb24gTGFraW4iLCJ2aWRlbyI6e319LCJpYXQiOjE1NTA4MDUxMTAsImV4cCI6MTU1MDgwODcxMCwiaXNzIjoiU0s4NDhjZGUwMzQ5ZmE0ZWU3NWZhNDY5OGUxODU1MWE0MiIsInN1YiI6IkFDYWE3ZTNjZmNjNDAzMjdlZGJkM2Q3OWEwY2VkOGJjNzEifQ.SJwQAgUlOjaLrQaqMUsvROpeIdg1bnhEwFN6FjDCzxk"}
+	// //     this.setState({ identity, token });
+	// //   });
 
-	const { identity, token } = {"identity":"Ms. Ramon Lakin","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzg0OGNkZTAzNDlmYTRlZTc1ZmE0Njk4ZTE4NTUxYTQyLTE1NTA4MDUxMTAiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJNcy4gUmFtb24gTGFraW4iLCJ2aWRlbyI6e319LCJpYXQiOjE1NTA4MDUxMTAsImV4cCI6MTU1MDgwODcxMCwiaXNzIjoiU0s4NDhjZGUwMzQ5ZmE0ZWU3NWZhNDY5OGUxODU1MWE0MiIsInN1YiI6IkFDYWE3ZTNjZmNjNDAzMjdlZGJkM2Q3OWEwY2VkOGJjNzEifQ.SJwQAgUlOjaLrQaqMUsvROpeIdg1bnhEwFN6FjDCzxk"}
-	this.setState({ identity, token });
+	// const { identity, token } = {"identity":"Ms. Ramon Lakin","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzg0OGNkZTAzNDlmYTRlZTc1ZmE0Njk4ZTE4NTUxYTQyLTE1NTA4MDUxMTAiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJNcy4gUmFtb24gTGFraW4iLCJ2aWRlbyI6e319LCJpYXQiOjE1NTA4MDUxMTAsImV4cCI6MTU1MDgwODcxMCwiaXNzIjoiU0s4NDhjZGUwMzQ5ZmE0ZWU3NWZhNDY5OGUxODU1MWE0MiIsInN1YiI6IkFDYWE3ZTNjZmNjNDAzMjdlZGJkM2Q3OWEwY2VkOGJjNzEifQ.SJwQAgUlOjaLrQaqMUsvROpeIdg1bnhEwFN6FjDCzxk"}
+	// this.setState({ identity, token });
+
+		  axios.get('/token').then(results => {
+	    /*
+	Make an API call to get the token and identity(fake name) and  update the corresponding state variables.
+	    */
+	    const { identity, token } = results.data;
+	    this.setState({ identity, token });
+	  });
 
 	}
 
