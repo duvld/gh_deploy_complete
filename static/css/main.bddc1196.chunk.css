@@ -1,0 +1,2 @@
+.flex-container{display:-webkit-flex;display:flex;border:1px solid green;-webkit-justify-content:space-between;justify-content:space-between;padding:5px;margin-top:10px}.flex-item{margin:5px}.flex-item:first-child{-webkit-flex:2 1;flex:2 1}.flex-item:last-child,.flex-item:nth-child(2){-webkit-flex:1 1;flex:1 1}.flex-item:last-child{background-color:beige;-webkit-flex-direction:column;flex-direction:column;overflow-y:scroll}#remote-media video{width:inherit;height:200px}
+/*# sourceMappingURL=main.bddc1196.chunk.css.map */
