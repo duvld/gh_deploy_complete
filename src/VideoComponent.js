@@ -47,6 +47,7 @@ export default class VideoComponent extends Component {
 	    */
 	    const { identity, token } = results.data;
 	    this.setState({ identity, token });
+	    console.log("id: " + identity + " token: " + token);
 	  });
 
 	}
